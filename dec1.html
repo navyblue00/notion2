@@ -29,6 +29,7 @@ body{
 
 .days {
   background: #a4e2cd;
+  color: #183059;
 }
 
 .hours {
@@ -38,10 +39,12 @@ body{
 
 .minutes {
   background: #f1c8e5;
+  color: #183059;
 }
 
 .seconds {
   background: #e0d49e;
+  color: #183059;
 }
 
 .numbers {
@@ -119,7 +122,8 @@ let timer = setInterval(function() {
   let days = Math.floor(diff / (1000 * 60 * 60 * 24));
   let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-  let seconds = Math.floor((diff % (1000 * 60)) / 1000);
+  //Math.floor((diff % (1000 * 60)) / 1000)
+  let seconds = 00 ;
 
   // display
   document.getElementById("days").innerHTML=days
